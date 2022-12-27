@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  db:
+    container_name: zerohungry-db
+    image: mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    ports:
+      - "3006:3306"
+    build: .
+
+
